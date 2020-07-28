@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <meta charset="UTF-8">
+  <title>JavaScript Practice</title>
+</head>
+<body>
+    <div id="container" style="width:100%; height:400px;"></div>
+      <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myChart = Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Fruit Consumption'
+            },
+            xAxis: {
+                categories: ['Apples', 'Bananas', 'Oranges']
+            },
+            yAxis: {
+                title: {
+                    text: 'Fruit eaten'
+                }
+            },
+            series: [{
+                name: 'Jane',
+                data: [1, 0, 4]
+            }, {
+                name: 'John',
+                data: [5, 7, 3]
+            }]
+        });
+    });
+    var fruits = ["pinapple", "cherries", "apples"]
+    var i = 0
+    while (i < fruits.length) {
+      console.log(fruits[i])
+      i ++;
+    }
+  </script>
+</body>
+</html>
