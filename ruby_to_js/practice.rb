@@ -1,5 +1,5 @@
-# Write a method that prints out the numbers 1 to 1000 that are divisible by 3.
-def print_numbers_divisible_by_three
+# # Write a method that prints out the numbers 1 to 1000 that are divisible by 3.
+# def print_numbers_divisible_by_three
   index = 1
   while index <= 1000
     if index % 3 == 0
@@ -11,8 +11,8 @@ end
 print_numbers_divisible_by_three
 
 
-# Write a method that accepts an array of strings and prints out every other string.
-def print_every_other_item(strings)
+# # Write a method that accepts an array of strings and prints out every other string.
+# def print_every_other_item(strings)
   index = 0
   strings.each do |string|
     if index % 2 == 0
@@ -24,7 +24,7 @@ end
 print_every_other_item(["a", "b", "c", "d", "e"])
 
 
-# Write a method that accepts an array of numbers and returns the sum.
+# # Write a method that accepts an array of numbers and returns the sum.
 def compute_sum(numbers)
   sum = 0
   numbers.each do |number|
@@ -35,9 +35,9 @@ end
 puts compute_sum([2, 4, 5])
 
 
-# Start with the hash: city_populations = {chi: 2700000}
-# Add populations to the city_populations hash for New York City (8.4 million) and San Francisco (800,000).
-# The result should be: {chi: 2700000, nyc: 8400000, sf: 800000}
+# # Start with the hash: city_populations = {chi: 2700000}
+# # Add populations to the city_populations hash for New York City (8.4 million) and San Francisco (800,000).
+# # The result should be: {chi: 2700000, nyc: 8400000, sf: 800000}
 city_populations = {chi: 2700000}
 city_populations[:nyc] = 8400000
 city_populations[:sf] = 800000
@@ -45,7 +45,7 @@ p city_populations
 
 
 
-# Write a method that prints out every number from 1 to 100. 
+# # Write a method that prints out every number from 1 to 100. 
 
 number = 1
 while number <= 100
@@ -53,7 +53,7 @@ while number <= 100
   number += 1
 end
 
-# Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
+# # Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
 
 number = 1
 while number <= 100
@@ -62,12 +62,22 @@ while number <= 100
 end
 
 # Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
-
-def numbers()
-
+array = [22, 55, 67, 55, 87]
+def numbers(array)
+  count = 0
+  array.each do |number|
+  if number == 55
+    count += 1
+  end
+end
+p count
+end
+numbers(array)
 
 # Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 # For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
+
+
 
 
 # Start with the hash: item_amounts = {chair: 5, table: 2}
