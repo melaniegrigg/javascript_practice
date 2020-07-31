@@ -16,8 +16,12 @@
   },
   "homepage": "https://github.com/melaniegrigg/javascript_practice#readme",
   "dependencies": {
+    "mathjs": "^7.1.0",
     "moment": "^2.27.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
   "description": ""
 }

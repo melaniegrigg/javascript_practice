@@ -1,3 +1,8 @@
+var moment = require('moment');
+var math = require('mathjs');
+
+console.log(math.evaluate('9 / 3 + 2i'));
+
 console.log('hello from javascript');
 console.log(moment("20141031", "YYYYMMDD").fromNow());
 
