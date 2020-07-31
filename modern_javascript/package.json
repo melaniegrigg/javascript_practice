@@ -1,7 +1,6 @@
 {
   "name": "javascript_practice",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,7 @@
   "homepage": "https://github.com/melaniegrigg/javascript_practice#readme",
   "dependencies": {
     "moment": "^2.27.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
